@@ -12,10 +12,8 @@
 .header-top-bar {
   background-color: #f1f1f1;
   padding: 7px 0;
-  transition: linear 5s;
   &.remove {
     display: none;
-    transition: linear 5s;
   }
 }
 .header-top-title {
