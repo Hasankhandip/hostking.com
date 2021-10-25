@@ -330,14 +330,10 @@ img {
 .header-top-bar {
   background-color: #f1f1f1;
   padding: 7px 0;
-  -webkit-transition: linear 5s;
-  transition: linear 5s;
 }
 
 .header-top-bar.remove {
   display: none;
-  -webkit-transition: linear 5s;
-  transition: linear 5s;
 }
 
 .header-top-title {
@@ -527,7 +523,7 @@ img {
 }
 
 .banner-section {
-  background-image: url(/assets/images/banner-shape.jpg);
+  background-image: url(./assets/images/banner-shape.jpg);
   padding: 215px 0 100px 0;
   position: relative;
   z-index: 1;
