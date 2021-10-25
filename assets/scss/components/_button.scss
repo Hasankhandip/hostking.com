@@ -1,0 +1,109 @@
+// scroll top btn
+.scroll-top {
+  position: fixed;
+  bottom: 100%;
+  right: 25px;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: $hover-color;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s;
+  border: none;
+  z-index: 100;
+  i {
+    transform: rotate(-90deg);
+    font-size: 22px;
+  }
+}
+
+.scroll-top.active {
+  bottom: 110px;
+  opacity: 1;
+  visibility: visible;
+}
+// scroll top btn
+
+// main btn scss start
+.main-btn {
+  font-size: 15px;
+  padding: 9px 16px;
+  border: 1px solid $hover-color;
+  background: $hover-color;
+  color: #fff;
+  border-radius: 5px;
+  transition: 0.4s;
+  &:hover {
+    color: #fff;
+    border-color: #004bc3;
+    background: #004bc3;
+  }
+}
+// main btn scss end
+
+//  main-btn-2 scss start
+.main-btn-2 {
+  background-color: $main-color;
+  border-color: #fff;
+  font-weight: 500;
+  padding: 12px 25px;
+  &:hover {
+    border-color: #fff;
+    background-color: #fff;
+    color: #575757;
+  }
+}
+//  main-btn-2 scss end
+
+//  main-btn-3 scss start
+.main-btn-3 {
+  background-color: #fff;
+  border-color: #fff;
+  color: #575757;
+  padding: 12px 25px;
+  font-weight: 500;
+  &:hover {
+    border-color: #fff;
+    background-color: $main-color;
+  }
+}
+//  main-btn-3 scss end
+
+// price-btn scss start
+.price-btn {
+  background-color: #fff;
+  border: 1px solid $hover-color;
+  color: $hover-color;
+}
+// price-btn scss end
+
+// message-box-btn scss start
+.message-box-btn {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $hover-color;
+  border-radius: 50%;
+  border: none;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  i {
+    color: #fff;
+    font-size: 30px;
+  }
+}
+.message-box-submit-btn {
+  font-size: 14px;
+  width: 100%;
+  margin-top: 10px;
+}
+// message-box-btn scss end
