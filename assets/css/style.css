@@ -523,7 +523,6 @@ img {
 }
 
 .banner-section {
-  background-image: url(./assets/images/banner-shape.jpg);
   padding: 215px 0 100px 0;
   position: relative;
   z-index: 1;
