@@ -1,4 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap");
+@-webkit-keyframes header-animation {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  50% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  75% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes header-animation {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  50% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  75% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 @-webkit-keyframes bounce {
   0% {
     -webkit-transform: translateY(0px);
@@ -21,6 +66,7 @@
             transform: translateY(0px);
   }
 }
+
 @keyframes bounce {
   0% {
     -webkit-transform: translateY(0px);
@@ -320,7 +366,7 @@ img {
 }
 
 .header-section {
-  position: fixed;
+  position: absolute;
   z-index: 99;
   width: 100%;
   left: 0;
@@ -348,14 +394,18 @@ img {
 
 .main-header {
   background-color: #fff;
-  -webkit-transition: linear 0.5s;
-  transition: linear 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .main-header.active {
-  -webkit-transition: linear 0.5s;
-  transition: linear 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: fixed;
+  width: 100%;
   background: #051b78;
+  -webkit-animation: header-animation 0.5s linear !important;
+          animation: header-animation 0.5s linear !important;
 }
 
 .header-logo {

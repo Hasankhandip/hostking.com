@@ -1,6 +1,6 @@
 // header-section scss start
 .header-section {
-  position: fixed;
+  position: absolute;
   z-index: 99;
   width: 100%;
   left: 0;
@@ -28,10 +28,13 @@
 // main-header scss start
 .main-header {
   background-color: #fff;
-  transition: linear 0.5s;
+  transition: 0.5s;
   &.active {
-    transition: linear 0.5s;
+    transition: 0.5s;
+    position: fixed;
+    width: 100%;
     background: $main-color;
+    animation: header-animation 0.5s linear !important;
   }
 }
 .header-logo {
